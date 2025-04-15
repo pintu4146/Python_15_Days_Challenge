@@ -64,3 +64,8 @@ employees = [
     (7, "Grace", "HR", 70000, "Inactive")
 ]
 
+
+# 1. Filter out inactive employees
+print([ep for ep in employees if ep[4] == 'Inactive'])
+
+# 2. Sort active employees by salary in descending order

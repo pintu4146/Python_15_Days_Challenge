@@ -31,6 +31,7 @@ transactions = [
 ]
 ["Charlie", "Alice", "Bob"]
 """
+from typing import List
 transactions = [
     (101, "Alice", 250.75, "Success"),
     (102, "Bob", 500.00, "Failed"),
@@ -41,10 +42,11 @@ transactions = [
 ]
 
 
-def filter_failed_transactions(arr: list) -> list:
+def filter_failed_transactions(arr: List) -> List:
     failed_transactions = [transaction for transaction in arr if transaction[3] == "Failed"]
     print("Filter out failed transactions.")
     print(failed_transactions)
+    return failed_transactions
 
 
 def sort_success_transaction_amount(transactions):
