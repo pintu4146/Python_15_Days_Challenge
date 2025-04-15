@@ -1,7 +1,5 @@
 
-
-
-#dict is simple data strucutre which raised keyerror when specific keys are missing
+# dict is simple data strucutre which raised keyerror when specific keys are missing
 # defaultdict pupulate
 
 # frequency count

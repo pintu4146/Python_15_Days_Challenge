@@ -1,8 +1,6 @@
-names = ["Alice", "Bob", "Amanda", "Brian"]
-
-
-
 from collections import defaultdict
+
+names = ["Alice", "Bob", "Amanda", "Brian"]
 
 grouped_data_by_first_letter = defaultdict(list)
 
