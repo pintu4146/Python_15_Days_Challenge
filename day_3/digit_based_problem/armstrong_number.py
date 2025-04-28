@@ -29,6 +29,19 @@ while True:
         print(f'enter number {e}')
 
 
+### Learning cases where we should avoid generator expression
+
+words = (sentence.split() for sentence in ["hello world", "foo bar"])
+
+for word_list in words:
+    for word in word_list:
+        print(word)
+
+for word_list in words: 
+    for word in word_list:
+        print(word)
+
+
 
 
 """
