@@ -23,19 +23,21 @@ Time complexity must be O(log n)
 
 """
 
+
 def binary_search(arr: list[int], target: int) -> int:
-    left, right = 0, len(arr)-1
+    left, right = 0, len(arr) - 1
 
     # arr must be sorted
     while left <= right:
-        mid = left + (right-left)//2
+        mid = left + (right - left) // 2
         if arr[mid] == target:
             return mid
         elif arr[mid] < target:
-            left = mid+1
+            left = mid + 1
         else:
-            right = mid-1
+            right = mid - 1
     return -1
+
 
 def test_binary_search():
     # Basic cases
