@@ -14,7 +14,7 @@ async def fetch_external_api_data(pub_key: str, **kwargs: Any) -> Dict[str, Any]
     print(f"going to fetch external api data from using {pub_key=}")
     if kwargs.get('action') and kwargs.get('action').lower() == 'failed':
         raise Exception('task failed for testing')
-    await asyncio.sleep(4)
+    await asyncio.sleep(40)
     print(f"data has been fetched using public key {pub_key=}")
     return {"status": "success", "data": "dummy data"}
 

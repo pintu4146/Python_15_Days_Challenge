@@ -27,4 +27,5 @@ class B(A):
 
 
 obj = B()
+print(obj.show())
 print(isinstance(obj, A))

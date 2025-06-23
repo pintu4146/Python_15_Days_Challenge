@@ -9,6 +9,8 @@ Strings with special characters ("Madam, I'm Adam.")
 """
 import re
 from collections import deque
+
+
 #
 # try:
 #     input_str = input("enter the string for palindrome check")
@@ -41,11 +43,12 @@ def palindrome_check_two_pointer(string):
             right -= 1
     return True
 
+
 def palindrome_check_deque(cleaned_str):
     init = deque(cleaned_str, maxlen=len(cleaned_str))
     print(init)
     while len(init) > 1:
-        if init.popleft()!=init.pop():
+        if init.popleft() != init.pop():
             return False
     return True
 

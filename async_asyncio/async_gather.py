@@ -14,7 +14,7 @@ async def fetch_external_api_data(pub_key: str, **kwargs: Any) -> Dict[str, Any]
     print(f"going to fetch external api data from using {pub_key=}")
     if kwargs.get('action') and kwargs.get('action').lower() == 'failed':
         raise Exception('task failed for testing')
-    await asyncio.sleep(4)
+    await asyncio.sleep(40)
     print(f"data has been fetched using public key {pub_key=}")
     return {"status": "success", "data": "dummy data"}
 
@@ -32,6 +32,15 @@ async def main():
         coroutine_obj_3,
         coroutine_obj_4
     )
+
+    tasks_gather = await asyncio.gather(
+        fetch_db_data(1),
+        fetch_db_data(2),
+        fetch_external_api_data('dummy'),
+        fetch_external_api_data('dummy')
+    )
+    print(100*'-')
+    print(f'gather task results \n {tasks_gather=}')
     # tasks = [coroutine_obj_1, coroutine_obj_2, coroutine_obj_3, coroutine_obj_4]
     res = []
 
