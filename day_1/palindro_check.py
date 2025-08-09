@@ -33,6 +33,25 @@ from collections import deque
 
 
 # two pointer concept
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def palindrome_check_two_pointer(string):
     left, right = 0, len(string) - 1
     while left <= right:
