@@ -23,3 +23,7 @@ def get_all_possible_subsets(lst: list) -> List[list]:
 
 res = get_all_possible_subsets([1, 2, 3])
 print(res)
+
+import dis
+
+dis.dis(get_all_possible_subsets)
