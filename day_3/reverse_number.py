@@ -8,7 +8,8 @@ def reverse_numbers(num: int) -> int:
     while num > 0:
         rev = rev * 10 + num % 10
         num //= 10
+    return rev
 
 
-
+num = 12345
 print(reverse_numbers(num=num))
