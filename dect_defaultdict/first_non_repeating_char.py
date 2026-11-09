@@ -29,8 +29,7 @@ for key, value in fre_count.items():
 
 # using defaultdict
 
-from collections import defaultdict
-
+from collection_package import defaultdict
 default_dict = defaultdict(int)
 
 for char in input:
@@ -43,7 +42,7 @@ for key, value in default_dict.items():
 
 # using counter
 
-from collections import Counter
+from collection_package import Counter
 
 counted = Counter(input)
 for char in input:

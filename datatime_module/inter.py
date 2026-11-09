@@ -2,7 +2,7 @@ import random
 
 # ['a','b','c','r','a']
 random_strng = ['a', 'b', 'c', 'r', 'a']
-from collections import defaultdict
+from collection_package import defaultdict
 
 
 def get_freq(random_string: list) -> dict:

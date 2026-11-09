@@ -8,7 +8,7 @@ Sample Output:
 Most frequent character: 's', Frequency: 3
 """
 
-from collections import Counter
+from collection_package import Counter
 
 
 def most_frequent(input: str) -> str:

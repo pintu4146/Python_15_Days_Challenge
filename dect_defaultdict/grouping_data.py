@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collection_package import defaultdict
 
 names = ["Alice", "Bob", "Amanda", "Brian"]
 

@@ -1,5 +1,5 @@
 
-from collections import defaultdict
+from collection_package import defaultdict
 def is_anagram(str, str2) -> bool:
     if len(str) == len(str2):
         default_dict = defaultdict(int)

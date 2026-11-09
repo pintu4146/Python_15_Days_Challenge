@@ -1,4 +1,4 @@
-from collections import deque
+from collection_package import deque
 """
 we will be covering basics deque operation ( double ended queue )
 """

@@ -8,7 +8,7 @@ Case sensitivity ("Racecar" vs "racecar")
 Strings with special characters ("Madam, I'm Adam.")
 """
 import re
-from collections import deque
+from collection_package import deque
 
 
 #

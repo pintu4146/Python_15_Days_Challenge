@@ -1,6 +1,6 @@
 from typing import Union
 from functools import reduce
-from collections.abc import Iterator
+from collection_package.abc import Iterator
 
 
 def reverse_string(ori: str) -> Union[str, None]:
