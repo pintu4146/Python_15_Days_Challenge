@@ -29,7 +29,7 @@ print("Output:", res)
 
 #  using dict
 
-from collection_package import defaultdict
+from collections import defaultdict
 
 
 default_dict = defaultdict(list)
